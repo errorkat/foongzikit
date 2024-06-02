@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+body {
+    margin: 0;
+    background-color: #30304b;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Karla", sans-serif;
+    font-weight: 700;
+    color: #e8e9f0;
+}
+
+p {
+    font-family: "Inconsolata", monospace;
+    color: #e8e9f0;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav a{
+    font-family: "Karla", sans-serif;
+    font-weight: 700;
+}
+
+.title {
+   color: #949fe0;
+   font-size: 2rem;
+}
+
+.bodyFont {
+    font-family: "Inconsolata", monospace;
+    font-weight: 400;
+}
+
+.menu {
+    text-decoration: none;
+    color: #e8e9f0;
+    font-size: 1.75rem;
+}
+
+.dropdownContent {
+    position: absolute;
+    top: 50px;
+    right: 15px;
+    background-color: #949fe0;
+    text-align: end;
+    display: none;
+    border-radius: .25rem;
+}
+
+.dropdownContent a {
+    font-size: 1.75rem;
+    display: block;
+    padding: 10px 15px 10px 40px;
+}
+
+.dropdownContent a:visited,
+.dropdownContent a:link {
+    color: #e8e9f0;
+}
+
+.dropdownContent a:hover {
+    background-color: #c257e1;
+    text-decoration: underline;
+    border-radius: .25rem;
+}
+
+.show {
+    display: block;
+}
+
+
+#sectionIntro {
+    min-height: 80vh;
+    margin-bottom: 20vh;
+}
+
+.introduction {
+    text-align: center;
+    position: relative;
+}
+
+.introduction h1 {
+    font-size: 3rem;
+    color: #949fe0;
+}
+
+.introduction p {
+    font-size: 1.75rem;
+}
+
+
+
+
+
+/* introduction */
+
+#sectionIntro a {
+    font-family: "Inconsolata", monospace;
+    font-weight: 400;
+    color: #e8e9f0;
+    font-size: 1.25rem;
+}
+
+#sectionIntro a:hover {
+    text-decoration: underline;
+    background-color: #c257e1;
+}
+
+#sectionIntro a {
+    border:#e8e9f0 solid 1px;
+    padding: 10px;
+    border-radius: .25rem;
+}
+
+.arrow{
+    width: 60px;
+}
+
+
+
+#sectionWorks img {
+    max-width: 100%;
+    height: auto;
+}
+
+.worksBox {
+    border: 1px solid #e8e9f0;
+    border-radius: .25rem;
+}
+
+.demoLink {
+    text-align: end;
+    margin-top: auto;
+}
+
+.demoLink a {
+    color: #e8e9f0;
+}
+
+.demoLink a:hover {
+    color: #c257e1;
+    text-decoration: underline;
+}
+
+
+.behanceLink {
+    color: #e8e9f0;
+    border: #e8e9f0 solid 1px;
+    padding: 10px;
+    border-radius: .25rem;
+}
+
+.behanceLink:hover {
+    background-color: #c257e1;
+    text-decoration: underline;
+}
+
+.behanceLink a{
+    color: #e8e9f0;
+}
+
+.inlineStyle{
+    text-align: center;
+}
+
+.inlineStyle p, .inlineStyle div{
+    display: inline;
+}
+
+@media (max-width: 576px) {
+    .inlineStyle p, .inlineStyle div{
+        font-size: 1rem;
+    }
+  }
+  @media (min-width: 578px) {
+    .inlineStyle p, .inlineStyle div{
+        font-size: 1.25rem;
+    }
+  }
+
+
+.centerText{
+    text-align: center;
+}
+
+.contact svg{
+    width: 30px;
+    fill: #e8e9f0;
+}
+
+.getInTouch{
+    font-size: 1.5rem;
+}
+
+.contact a{
+    color: #e8e9f0;
+    font-size: 1.5rem;
+    font-family: "Inconsolata", monospace;
+}
+
+.contact a:hover{
+    color: #c257e1;
+}
+.contact a:hover svg{
+    fill: #c257e1;
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+}
+
+footer div{
+    border-top: solid 1px #e8e9f0;
+}
+footer p{
+ text-align: center;
+    padding: 15px 0;
+    margin: 0;
+}
