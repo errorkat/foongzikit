@@ -26,19 +26,21 @@ a {
     text-decoration: none;
 }
 
-nav a{
-    font-family: "Karla", sans-serif;
-    font-weight: 700;
-}
-
 .title {
-   color: #949fe0;
-   font-size: 2rem;
+    color: #949fe0;
+    font-size: 2rem;
 }
 
 .bodyFont {
     font-family: "Inconsolata", monospace;
     font-weight: 400;
+}
+
+
+/* navbar */
+nav a {
+    font-family: "Karla", sans-serif;
+    font-weight: 700;
 }
 
 .menu {
@@ -55,6 +57,7 @@ nav a{
     text-align: end;
     display: none;
     border-radius: .25rem;
+    z-index: 2;
 }
 
 .dropdownContent a {
@@ -79,14 +82,21 @@ nav a{
 }
 
 
+
+
+/* introduction section */
 #sectionIntro {
-    min-height: 80vh;
-    margin-bottom: 20vh;
+    height: 90vh;
+}
+
+#autoTyped{
+    color: #c257e1;
 }
 
 .introduction {
     text-align: center;
     position: relative;
+    padding-top: 25vh;
 }
 
 .introduction h1 {
@@ -97,12 +107,6 @@ nav a{
 .introduction p {
     font-size: 1.75rem;
 }
-
-
-
-
-
-/* introduction */
 
 #sectionIntro a {
     font-family: "Inconsolata", monospace;
@@ -117,20 +121,58 @@ nav a{
 }
 
 #sectionIntro a {
-    border:#e8e9f0 solid 1px;
+    border: #e8e9f0 solid 1px;
     padding: 10px;
     border-radius: .25rem;
 }
 
-.arrow{
-    width: 60px;
+.arrow svg {
+    width: 20px;
+}
+
+.arrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20vh;
+}
+
+.arrow svg {
+    margin-top: 8px;
+    /* Adjust as necessary */
+    animation: upDown 1.5s infinite ease;
+}
+
+@keyframes upDown {
+
+    0%,
+    25%,
+    75%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-7px);
+        /* Adjust the value as necessary */
+    }
+
 }
 
 
 
-#sectionWorks img {
+/* works section */
+#sectionWorks {
+    margin: 5rem 0;
+}
+
+.worksImg {
     max-width: 100%;
     height: auto;
+}
+
+.worksImgLink:hover img{
+    border: #e8e9f0 solid 1px;
 }
 
 .worksBox {
@@ -145,10 +187,13 @@ nav a{
 
 .demoLink a {
     color: #e8e9f0;
+    border: #e8e9f0 solid 1px;
+    border-radius: .25rem;
+    padding: 2px 5px;
 }
 
 .demoLink a:hover {
-    color: #c257e1;
+    background-color: #c257e1;
     text-decoration: underline;
 }
 
@@ -165,67 +210,84 @@ nav a{
     text-decoration: underline;
 }
 
-.behanceLink a{
+.behanceLink a {
     color: #e8e9f0;
 }
 
-.inlineStyle{
+.inlineStyle {
     text-align: center;
 }
 
-.inlineStyle p, .inlineStyle div{
+.inlineStyle p,
+.inlineStyle div {
     display: inline;
 }
 
 @media (max-width: 576px) {
-    .inlineStyle p, .inlineStyle div{
+
+    .inlineStyle p,
+    .inlineStyle div {
         font-size: 1rem;
     }
-  }
-  @media (min-width: 578px) {
-    .inlineStyle p, .inlineStyle div{
-        font-size: 1.25rem;
-    }
-  }
-
-
-.centerText{
-    text-align: center;
 }
 
-.contact svg{
+@media (min-width: 578px) {
+
+    .inlineStyle p,
+    .inlineStyle div {
+        font-size: 1.25rem;
+    }
+}
+
+
+/* about section */
+#sectionAbout{
+    margin: 5rem 0;
+}
+
+
+/* contact section*/
+#sectionContact{
+    margin: 5rem 0;
+}
+
+.contact svg {
     width: 30px;
     fill: #e8e9f0;
 }
 
-.getInTouch{
+.getInTouch {
     font-size: 1.5rem;
 }
 
-.contact a{
+.contact a {
     color: #e8e9f0;
     font-size: 1.5rem;
     font-family: "Inconsolata", monospace;
 }
 
-.contact a:hover{
+.contact a:hover {
     color: #c257e1;
 }
-.contact a:hover svg{
+
+.contact a:hover svg {
     fill: #c257e1;
 }
 
-.icon{
+.icon {
     display: flex;
     justify-content: center;
-    align-items:center ;
+    align-items: center;
 }
 
-footer div{
+
+/* footer */
+footer div {
     border-top: solid 1px #e8e9f0;
 }
-footer p{
- text-align: center;
+
+footer p {
+    text-align: center;
     padding: 15px 0;
     margin: 0;
 }
