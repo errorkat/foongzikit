@@ -1,3 +1,3 @@
-# Pianison
+# Portfolio Website
 
-An interactive music website project that can play, learn and explore about new anime music.
+A simple portfolio website to showcase my own work and practice my skills.
