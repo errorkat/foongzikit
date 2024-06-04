@@ -38,7 +38,7 @@ a {
 
 
 /* navbar */
-nav button {
+nav a {
     font-family: "Karla", sans-serif;
     font-weight: 700;
 }
@@ -47,38 +47,23 @@ nav button {
     text-decoration: none;
     color: #e8e9f0;
     font-size: 1.75rem;
-    font-family: "Karla", sans-serif;
-    font-weight: 700;
-}
-
-nav a:hover{
-    color: #c257e1;
 }
 
 .dropdownContent {
-    display: none;
     position: absolute;
     top: 50px;
     right: 15px;
     background-color: #949fe0;
-    text-align: center;
+    text-align: end;
+    display: none;
     border-radius: .25rem;
     z-index: 2;
 }
 
-.dropdownContent button {
-    border: none;
+.dropdownContent a {
     font-size: 1.75rem;
-    padding: 10px 15px 10px 30px;
-    color: #e8e9f0;
-    background-color: #949fe0;
     display: block;
-    border-radius: .25rem;
-}
-
-.dropdownContent button:hover {
-    color: #c257e1;
-    text-decoration: underline;
+    padding: 10px 15px 10px 40px;
 }
 
 .dropdownContent a:visited,
@@ -87,8 +72,9 @@ nav a:hover{
 }
 
 .dropdownContent a:hover {
-    color: #c257e1;
+    background-color: #c257e1;
     text-decoration: underline;
+    border-radius: .25rem;
 }
 
 .show {
@@ -103,7 +89,7 @@ nav a:hover{
     height: 90vh;
 }
 
-#autoTyped {
+#autoTyped{
     color: #c257e1;
 }
 
@@ -185,7 +171,7 @@ nav a:hover{
     height: auto;
 }
 
-.worksImgLink:hover img {
+.worksImgLink:hover img{
     border: #e8e9f0 solid 1px;
 }
 
@@ -255,13 +241,13 @@ nav a:hover{
 
 
 /* about section */
-#sectionAbout {
+#sectionAbout{
     margin: 5rem 0;
 }
 
 
 /* contact section*/
-#sectionContact {
+#sectionContact{
     margin: 5rem 0;
 }
 
