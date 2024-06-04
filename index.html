@@ -19,12 +19,10 @@
                 <div class="d-flex justify-content-end titleFont">
                     <a href="#" class="menu me-3 mt-3" onclick="dropdownFunction()">menu</a>
                     <div id="myDropdown" class="dropdownContent">
-                        <button id="toWorks">works</button>
-                        <button id="toAbout">about</button>
-                        <button id="toContact">contact</button>
-                        <button>
-                            <a href="https://www.behance.net/errorkat" target=”_blank”>behance</a>
-                        </button>
+                        <a href="#sectionWorks">works</a>
+                        <a href="#sectionAbout">about</a>
+                        <a href="#sectionContact">contact</a>
+                        <a href="https://www.behance.net/errorkat" target=”_blank”>behance</a>
                     </div>
                 </div>
             </div>
@@ -67,7 +65,7 @@
                             music.<br><br>
                             View on desktop for best experience.</p>
                         <div class="demoLink bodyFont"><a target="_blank" href="https://pianison-ab075.web.app/"
-                                class="me-3">Demo</a><a target="_blank" href="#">Source Code</a></div>
+                                class="me-3">Demo</a><a target="_blank" href="https://github.com/errorkat/Pianison">Source Code</a></div>
                     </div>
                 </div>
                 <div class="row col-12 col-md-11 col-lg-7 d-flex justify-content-end mt-5">
@@ -144,7 +142,31 @@
     </footer>
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script src="js/script.js"></script>
+    <script>
+        var typed = new Typed('#autoTyped', {
+            strings: ["am a designer", "build things","bring ideas to life"],
+            typeSpeed: 120,
+            backSpeed: 30,
+            loop: true
+        });
+
+        function dropdownFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.menu')) {
+                var dropdowns = document.getElementsByClassName("dropdownContent");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        } </script>
 </body>
 
 </html>
