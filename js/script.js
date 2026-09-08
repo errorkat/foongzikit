@@ -10,6 +10,11 @@ scrollTo = (element) => {
   document.getElementById("toWorks").addEventListener('click', () => {
     scrollTo(document.getElementById("sectionWorks"));
   });
+
+  document.getElementById("scrollToWorks").addEventListener('click', (event) => {
+    event.preventDefault();
+    scrollTo(document.getElementById("sectionWorks"));
+  });
   
   document.getElementById("toAbout").addEventListener('click', () => {
     scrollTo(document.getElementById("sectionAbout"));
@@ -21,7 +26,7 @@ scrollTo = (element) => {
 
 // autotyped
   var typed = new Typed('#autoTyped', {
-    strings: ["am a designer", "build things","bring ideas to life"],
+    strings: ["solve problems", "build things","bring ideas to life"],
     typeSpeed: 100,
     backSpeed: 30,
     loop: true
