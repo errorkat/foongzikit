@@ -16,10 +16,14 @@ h6 {
     color: #e8e9f0;
 }
 
-p {
+p,link {
     font-family: "Inconsolata", monospace;
     color: #e8e9f0;
     font-weight: 400;
+}
+
+.link:visited {
+    text-decoration: none;
 }
 
 a {
@@ -151,6 +155,17 @@ nav a:hover{
     padding-top: 20vh;
 }
 
+#sectionIntro .scrollPrompt {
+    color: #e8e9f0;
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+}
+
+#sectionIntro .scrollPrompt:hover {
+    background-color: transparent;
+}
+
 .arrow svg {
     margin-top: 8px;
     /* Adjust as necessary */
@@ -257,6 +272,18 @@ nav a:hover{
 /* about section */
 #sectionAbout {
     margin: 5rem 0;
+}
+
+#sectionAbout .link {
+    display: block;
+    color: #e8e9f0;
+    font-family: "Inconsolata", monospace;
+    font-size: 1.25rem;
+}
+
+#sectionAbout .link:hover {
+    color: #c257e1;
+    text-decoration: underline;
 }
 
 
